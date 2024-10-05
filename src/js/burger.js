@@ -9,15 +9,25 @@ const burger = () => {
 		burgerLines.classList.toggle('burger--transform');
 		burgerButton.classList.toggle('burger--transform');
 		headerNav.classList.toggle('header__nav--toogle');
-		body.classList.add('disable-scroll');
+		body.classList.toggle('disable-scroll');
+
+		console.log(burgerButton);
+
+		scrollOn();
 	});
 
 	navItems.forEach(elem => {
 		elem.addEventListener('click', () => {
 			headerNav.classList.remove('header__nav--toogle');
-					body.classList.remove('disable-scroll');
+			body.classList.remove('disable-scroll');
+			burgerLines.classList.remove('burger--transform');
+			burgerButton.classList.remove('burger--transform');
 		});
 	});
+};
+
+const scrollOn = () => {
+	burgerButton.addEventListener('.click', () => {});
 };
 
 export default burger;
