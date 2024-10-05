@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("Hello world")}();
+!function(){"use strict";const e=document.querySelector(".burger "),t=document.querySelector(".header__nav");e.addEventListener("click",(()=>{t.classList.toggle("header__nav--toogle")}))}();

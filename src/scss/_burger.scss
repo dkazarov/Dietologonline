@@ -1,12 +1,12 @@
 .burger {
-  display: none;
+	display: none;
 	position: relative;
 	width: 30px;
 	height: 24px;
 	border: none;
 	padding: 0;
 	background-color: transparent;
-  cursor: pointer;
+	cursor: pointer;
 
 	&::before,
 	&::after {
@@ -35,4 +35,9 @@
 	width: 75%;
 	height: 2px;
 	background-color: $main-text-color;
+}
+
+.header__nav.header__nav--toogle {
+	opacity: 1;
+  height: 100vh;
 }
