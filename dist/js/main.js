@@ -1,1 +1,1 @@
-!function(){"use strict";const e=document.querySelector(".burger "),t=document.querySelector(".header__nav");e.addEventListener("click",(()=>{t.classList.toggle("header__nav--toogle")}))}();
+!function(){"use strict";const e=document.querySelector(".burger"),r=document.querySelector(".burger__line"),t=document.querySelector(".header__nav");e.addEventListener("click",(()=>{r.classList.toggle("burger--transform"),e.classList.toggle("burger--transform"),t.classList.toggle("header__nav--toogle")}))}();
