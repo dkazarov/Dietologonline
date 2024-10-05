@@ -1,16 +1,15 @@
 .hero__inner {
 	display: flex;
-	justify-content: space-between;
-  margin-top: 60px;
+	align-items: center;
+	justify-content: center;
 }
 .hero__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 214px;
+
 	max-width: 360px;
 	max-height: 235px;
-	overflow: hidden;
 }
 
 .hero__title {
@@ -18,11 +17,11 @@
 	font-size: 43px;
 	max-width: 360px;
 	max-height: 125px;
+  margin-bottom: 32px;
 }
 
 .hero__text {
 	font-weight: 400;
 	font-size: 16px;
+  margin-bottom: 53px;
 }
-
-

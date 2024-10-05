@@ -39,8 +39,8 @@
 }
 
 .header__nav.header__nav--toogle {
-	transform: none;
-	height: calc(100vh - 60px);
+	opacity: 1;
+	height: 100vh;
 	background-color: $bg-color;
 }
 

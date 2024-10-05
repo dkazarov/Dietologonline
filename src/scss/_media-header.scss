@@ -68,16 +68,14 @@
 	}
 
 	.header__nav {
+    opacity: 0;
 		position: fixed;
-		z-index: 1;
-		opacity: 1;
 		left: 0;
 		top: 60px;
 		width: 100%;
 		font-size: 24px;
 		background-color: transparent;
 		transition: all 0.2s ease-in-out;
-		transform: translateY(-150%);
 	}
 	.header-nav__list {
 		display: block;
