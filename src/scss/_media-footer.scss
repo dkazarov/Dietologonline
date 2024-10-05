@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+	.footer__inner {
+		padding: 30px;
+	}
+	.footer-nav__item {
+		margin-right: 34px;
+	}
+}
+
+@media (max-width: 992px) {
+	.footer-nav__item {
+		margin-right: 34px;
+	}
+}
+
+@media (max-width: 576px) {
+
+  .footer__inner {
+    padding: 18px;
+  }
+	.logo.--footer {
+		display: none;
+	}
+	.footer-nav__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-nav__list--block1 {
+		margin-right: 0;
+		margin-bottom: 18px;
+	}
+
+	.footer-nav__item {
+		margin-right: 18px;
+	}
+}

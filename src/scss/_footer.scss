@@ -11,15 +11,20 @@
 	margin-bottom: 38px;
 }
 
-.footer__nav {
-}
-
 .footer-nav__list {
 	display: flex;
 	justify-content: center;
 	text-wrap: nowrap;
 	font-weight: 600;
 	font-size: 15px;
+}
+
+.footer-nav__list--block1 {
+	display: flex;
+	margin-right: 43px;
+}
+.footer-nav__list--block2 {
+	display: flex;
 }
 
 .footer-nav__item {
