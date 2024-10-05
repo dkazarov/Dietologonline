@@ -1,7 +1,35 @@
-.footer {
-	&__inner {
-		height: 100px;
-		width: 100%;
-		background-color: cornflowerblue;
+.footer__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 75px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	margin-right: 0;
+	margin-bottom: 38px;
+}
+
+.footer__nav {
+}
+
+.footer-nav__list {
+	display: flex;
+	justify-content: center;
+	text-wrap: nowrap;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.footer-nav__item {
+	margin-right: 93px;
+
+	&:last-child {
+		margin-right: 0;
 	}
+}
+
+.footer-nav__link {
+	color: $main-text-color;
 }
