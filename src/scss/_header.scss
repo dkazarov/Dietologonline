@@ -1,7 +1,38 @@
-.header {
-	&__inner {
-		height: 100px;
-		width: 100%;
-		background-color: cornflowerblue;
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 100px;
+	box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	color: $accent-color;
+	margin-right: 43px;
+}
+
+.header__nav {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.header-nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav__item {
+	margin-right: 43px;
+	text-wrap: nowrap;
+
+	&:last-child {
+		margin-right: 0;
 	}
+}
+
+.header-nav__link {
+	color: $main-text-color;
 }
