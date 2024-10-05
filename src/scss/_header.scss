@@ -12,6 +12,7 @@
 	font-size: 17px;
 	color: $accent-color;
 	margin-right: 43px;
+	cursor: pointer;
 }
 
 .header__nav {
@@ -27,6 +28,7 @@
 .header-nav__item {
 	margin-right: 43px;
 	text-wrap: nowrap;
+	transition: all 0.3s ease-in-out;
 
 	&:last-child {
 		margin-right: 0;
@@ -34,13 +36,26 @@
 		padding: 9px 25px;
 		border: 1px solid rgba(93, 189, 109, 0);
 		background-color: #e6f9e6;
+
+		&:hover {
+			border: 1px solid rgba(93, 189, 109, 1);
+		}
 	}
 }
 
 .header-nav__link {
 	color: $main-text-color;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: $action-color;
+	}
 }
 
 .header-nav__item--last a {
 	color: $accent-color;
+
+	&:hover {
+		color: $accent-color;
+	}
 }
