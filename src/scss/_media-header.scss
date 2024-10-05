@@ -19,8 +19,8 @@
 	}
 
 	.logo {
-		margin-right: 34px;
-    margin-bottom: 18px;
+		margin-right: 0;
+		margin-bottom: 18px;
 	}
 
 	.header-nav__item {
@@ -29,10 +29,22 @@
 		&:last-child {
 			background-color: transparent;
 			padding: 0;
+			border: transparent;
+
+			&:hover {
+				border: transparent;
+			}
 		}
+	}
+
+	.header-nav__link {
 	}
 
 	.header-nav__item--last a {
 		color: $main-text-color;
+
+		&:hover {
+			color: $action-color;
+		}
 	}
 }
