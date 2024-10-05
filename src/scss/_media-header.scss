@@ -1,4 +1,4 @@
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 	.header__inner {
 		padding: 24px;
 	}
@@ -12,7 +12,7 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 	.header__inner {
 		flex-direction: column;
 		padding: 24px;
@@ -46,5 +46,39 @@
 		&:hover {
 			color: $action-color;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+	}
+	.header__inner {
+		position: relative;
+		flex-direction: row;
+		padding: 18px;
+	}
+	.logo {
+		margin-right: 18px;
+		margin-bottom: 0;
+	}
+
+	.header__nav {
+		position: fixed;
+		left: 50%;
+		top: 60px;
+		width: 100%;
+		transform: translateX(-50%);
+		font-size: 24px;
+		background-color: $bg-color;
+	}
+	.header-nav__list {
+		display: block;
+		text-align: center;
+		padding: 18px;
+	}
+	.header-nav__item {
+		margin-right: 0;
+		margin-bottom: 15px;
 	}
 }
