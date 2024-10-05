@@ -15,6 +15,7 @@ const burger = () => {
 	navItems.forEach(elem => {
 		elem.addEventListener('click', () => {
 			headerNav.classList.remove('header__nav--toogle');
+					body.classList.remove('disable-scroll');
 		});
 	});
 };
