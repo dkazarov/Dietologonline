@@ -6,7 +6,7 @@
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.logo.--footer {
 	margin-right: 0;
 	margin-bottom: 38px;
 }
@@ -31,5 +31,15 @@
 }
 
 .footer-nav__link {
+	transition: all 0.2s ease-in-out;
 	color: $main-text-color;
+
+	&:focus-visible {
+		outline: none;
+		color: $action-color;
+	}
+
+	&:hover {
+		color: $action-color;
+	}
 }
