@@ -47,6 +47,11 @@
 	color: $main-text-color;
 	transition: all 0.3s ease-in-out;
 
+	&:focus-visible {
+		outline: none;
+		color: $action-color;
+	}
+
 	&:hover {
 		color: $action-color;
 	}
@@ -54,6 +59,10 @@
 
 .header-nav__item--last a {
 	color: $accent-color;
+
+	&:focus-visible {
+		color: $accent-color;
+	}
 
 	&:hover {
 		color: $accent-color;
