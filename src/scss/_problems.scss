@@ -1,0 +1,36 @@
+.problems {
+	background-color: $bg-color;
+	padding: 110px 0;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.problems__inner {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px 30px;
+}
+
+.problems-card {
+	background-color: $bg-light;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 350px;
+	max-height: 216px;
+	overflow: hidden;
+}
+
+.problems-card__img {
+	margin-bottom: 10px;
+}
+.problems-card__title {
+	font-weight: 600;
+	font-size: 16px;
+}
+.problems-card__header {
+	margin-bottom: 10px;
+}

@@ -7,10 +7,9 @@
 	border-radius: 50px;
 	max-width: 240px;
 	max-height: 48px;
-	color: $action__btn;
+	color: $bg-light;
 	transition: all 0.3s ease-in-out;
 	&:hover {
 		transform: translateY(-5px);
 	}
 }
-
