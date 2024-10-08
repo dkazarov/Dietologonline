@@ -82,10 +82,12 @@
 	}
 	.problems-card {
 		padding: 10px 0 !important;
+		transition: all 0.5s ease-in-out;
 	}
 	.problems-card__header {
 		display: block !important;
 		text-align: center !important;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.problems-card__img {
@@ -100,5 +102,24 @@
 		max-height: 100px !important;
 		overflow: visible;
 		padding-top: 10px !important;
+	}
+	.problems-card .triangle {
+		transition: all 0.3s ease-in-out;
+	}
+
+	.problems-card.active .triangle {
+		transform: rotate(180deg);
+		transition: all 0.3s ease-in-out;
+	}
+
+	.triangle {
+		position: absolute;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+		border: 0 solid transparent;
+		border-left-width: 5px;
+		border-right-width: 5px;
+		border-top: 5px solid lightgrey;
 	}
 }
