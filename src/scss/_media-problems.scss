@@ -30,6 +30,7 @@
 	.problems-card {
 		max-width: 100% !important;
 		height: 100% !important;
+		display: block !important;
 
 		&:hover {
 			transform: none !important;
@@ -61,12 +62,21 @@
 	.problems-card__content {
 		max-height: 0;
 		overflow: hidden;
+		max-height: 0;
+		overflow: hidden;
 		text-align: center;
+		transition: all 0.3s ease-out;
+		box-sizing: content-box;
+	}
+
+	.problems-card.active .problems-card__content {
+		max-height: 100px !important;
+		overflow: visible;
+		padding-top: 30px !important;
 	}
 }
 
 @media (max-width: 375px) {
-
 	.title {
 		margin-bottom: 30px !important;
 	}
@@ -77,7 +87,18 @@
 		display: block !important;
 		text-align: center !important;
 	}
+
 	.problems-card__img {
 		display: none;
+	}
+
+	.problems-card__content {
+		padding: 0 10px !important;
+	}
+
+	.problems-card.active .problems-card__content {
+		max-height: 100px !important;
+		overflow: visible;
+		padding-top: 10px !important;
 	}
 }
