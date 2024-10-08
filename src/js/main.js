@@ -6,18 +6,13 @@ burger();
 
 const card = document.querySelectorAll('.problems-card');
 
-const acoordeonOn = () => {
-	card.forEach(elem => {
-		elem.addEventListener('click', event => {
-			const content = document.querySelector('.problems-card__content');
-
-			const current = event.currentTarget;
-			current.classList.toggle('active');
-			content.style = content.scrollHeight + 'px';
-
-			// current.classList.remove('active');
-		});
+card.forEach(item => {
+	item.addEventListener('click', e => {
+		if (e.target.classList.contains('active')) {
+			e.target.classList.remove('active');
+			return;
+		}
+		card.forEach(e => e.classList.remove('active'));
+		e.currentTarget.classList.add('active');
 	});
-};
-
-acoordeonOn();
+});
